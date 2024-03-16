@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: Montserrat, Sans-serif;
+}
+
+/* ------ HEADER SECTION------- */
+/* ----------------------------- */
+header {
+  margin-bottom: 9.6rem;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 9.6rem;
+  padding: 1.8rem 2.6rem;
+  position: sticky;
+}
+.logo {
+  font-size: 2rem;
+  color: #111;
+  font-weight: 600;
+  font-size: 2rem;
+}
+.logo-style {
+  font-weight: 600;
+  color: #2b8a3e;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+.heigher-font {
+  font-size: 3.6rem;
+}
+.nav-link-container {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+.nav-links:link,
+.nav-links:visited {
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #111;
+  text-decoration: none;
+}
+
+/* -------------------------------- */
+/* HERO SECTION */
+/* -------------------------------- */
+.hero-section {
+  margin-bottom: 9.6rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.6rem;
+  margin: 0 auto;
+  width: 98rem;
+  align-items: center;
+}
+.hero-text-box {
+  padding: 1rem;
+}
+.primary-heading {
+  font-size: 3.6rem;
+  letter-spacing: 0.005rem;
+  margin-bottom: 4.8rem;
+  font-weight: 600;
+}
+.hero-text {
+  font-size: 1.8rem;
+  margin-bottom: 4.8rem;
+}
+.btn-container {
+  display: flex;
+  gap: 3.4rem;
+}
+
+.btn:link,
+.btn-link:visited {
+  padding: 2rem 2rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-decoration: none;
+  border-radius: 4rem;
+}
+.cta-btn:link,
+.cta-btn:visited {
+  background-color: #2f9e44;
+  color: #fff;
+}
+.idea-btn:link,
+.idea-btn:visited {
+  background-color: #6dbb7c;
+  color: #fff;
+}
+.hero-img {
+  width: 100%;
+  border-radius: 1rem;
+}
+/* -------------------------------- */
+/* Featured SECTION */
+/* -------------------------------- */
+.features-section {
+  margin: 9.6rem 0 9.6rem 0;
+}
+.feature-box {
+  padding: 3rem;
+
+  transition: all 0.3s;
+}
+.feature-box:hover {
+  transform: translateY(-10%);
+}
+.feature-icon,
+.icon {
+  font-size: 2.4rem;
+  color: #2b8a3e;
+  margin-bottom: 1.6rem;
+}
+.feature-icon {
+  margin-bottom: 1.6rem;
+}
+.feature-title {
+  font-size: 2rem;
+  margin-bottom: 1.8rem;
+}
+.featured-text {
+  font-size: 1.8rem;
+}
+/* -------------------------------- */
+/* testimonial SECTION */
+/* -------------------------------- */
+.testimonial-section {
+  margin: 9.6rem 0;
+}
+.testimonial {
+  display: flex;
+  gap: 2.6rem;
+  padding: 2.8rem;
+  background-color: #2b8a3e;
+  border-radius: 1.1rem;
+  color: #fff;
+}
+.testimonial-img {
+  width: 100%;
+  border-radius: 1.1rem;
+}
+.testimonial-text {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+.testimonial-customer {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+}
+/* -------------------------------- */
+/* BEST SEALING SECTION */
+/* -------------------------------- */
+.best-sealing-section {
+  margin: 9.6rem 0;
+}
+.cards-row {
+  gap: 6.5rem;
+}
+.card {
+  border-radius: 1.1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  box-shadow: 0 0 10px 1px rgba(142, 142, 142, 0.102);
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.card:hover {
+  transform: translateY(-5%);
+}
+.card-img {
+  width: 100%;
+}
+.card-title {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 3rem;
+}
+.card-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0 3rem 0 3rem;
+}
+.card-item {
+  display: flex;
+  gap: 1rem;
+}
+.card-item p {
+  font-size: 1.8rem;
+}
+.price-container {
+  padding: 3rem;
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+.price-container p {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.btn-card {
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 100rem;
+  background-color: #2b8a3e;
+  color: #fff;
+  cursor: pointer;
+}
+footer {
+  border-bottom: solid 0.7rem #2b8a3e;
+}
+footer p {
+  margin-bottom: 6rem;
+}

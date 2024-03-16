@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Basic Language of the web:HTML</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- <h1>The Basic Language of the web:HTML</h1>
+      <h2>The Basic Language of the web:HTML</h2>
+      <h3>The Basic Language of the web:HTML</h3>
+      <h4>The Basic Language of the web:HTML</h4>
+      <h5>The Basic Language of the web:HTML</h5>
+      <h6>The Basic Language of the web:HTML</h6> -->
+      <div class="container">
+
+        <header id="main-header">
+          <h1>📘 The Code Magazine</h1>
+          <nav>
+            <ul class="navigation">
+              <li><a href="/04-CSS-Layouts/blog.html">Blog</a></li>
+              <li><a href="Challenge-section2/Section2hallenge2.html">Challenges</a></li>
+              <li><a href="/04-CSS-Layouts/flexbox.html">Flexbox</a></li>
+              <li><a href="/04-CSS-Layouts/css-grid.html">CSS Grid</a></li>
+            </ul>
+          </nav>
+          <button class="like-btn">❤️ Like</button>
+        </header>
+        <!--  Seulement necessaire pour flexbox -->
+        <!-- <div class="container-flex"> -->
+          <article class="post-header">
+            <h2>The Basic Language of the web: HTML</h2>
+            <div class="author">
+              <img
+              class="author-img"
+              style="border-radius: 100%"
+              src="images/laura-jones.jpg"
+              alt="author"
+              width="50"
+              />
+              <p class="author-content ">
+                Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+              </p>
+            </div>
+            <div class="blog-image">
+              <img
+              src="images/post-img.jpg"
+              alt="post-img"       
+              class="post-image"
+              />
+              <!-- <span class="top-article">TOP</span> -->
+            </div>
+            </>
+            <p>
+              All modern websites and web applications are built using three
+              <em>fundamental</em>
+              technologies: HTML, CSS and JavaScript. These are the languages of the
+              web.
+            </p>
+            <p>
+              In this post, let's focus on HTML. We will learn what HTML is all about,
+              and why you too should learn it.
+            </p>
+            <h3>What is HTML?</h3>
+            
+            <p>
+              HTML stands for <strong>H</strong>yper<strong>T</strong>ext
+              <strong>M</strong>arkup <strong>L</strong>anguage. It's a markup
+              language that web developers use to structure and describe the content
+              of a webpage (not a programming language).
+            </p>
+            <p>
+              HTML consists of elements that describe different types of content:
+              paragraphs, links, headings, images, video, etc. Web browsers understand
+              HTML and render HTML code as websites.
+            </p>
+            <p>In HTML, each element is made up of 3 parts:</p>
+            <ol>
+              <li>The opening tag</li>
+              <li>The closing tag</li>
+              <li>The actual element</li>
+            </ol>
+            
+            <p>
+              You can learn more at the<a
+              href="https://developer.mozilla.org/fr/"
+              target="_blank"
+              >
+              MDN Web Docs.
+            </a>
+          </p>
+          
+          <h3>Why should you learn HTML?</h3>
+          <p>
+            There are countless reasons for learning the fundamental language of the
+            web. Here are 5 of them:
+          </p>
+          <ul class="benefit-list">
+            <li>To be able to use the fundamental web dev language</li>
+            <li>
+              To hand-craft beautiful websites instead of relying on tools like
+              Worpress or Wix
+            </li>
+            <li>To build web applications</li>
+            <li>To impress friends</li>
+            <li>To have fun 😃</li>
+          </ul>
+          <p>Hopefully you learned something new here. See you next time!</p>
+        </article>
+        
+        <aside>
+          <h4>Related posts</h4>
+          <ul>
+            <div class="related-content">
+              <img src="images/related-1.jpg" alt="web dev" width="75" />
+              <li class="related">
+                <a href="#">How to learn Web developement</a>
+                <p class="related-author">By Jonas Schmedtmann</p>
+              </li>
+            </div>
+              
+            <div class="related-content">
+              <img src="images/related-2.jpg" alt="storm" width="75" />
+              <li class="related">
+                <a href="#">The Unknown Powers of CSS</a>
+                <p class="related-author">By Jim Dillon</p>
+              </li>
+            </div>
+            
+            <div class="related-content">
+              <img src="images/related-3.jpg" alt="image" width="75" />
+              <li class="related">
+                <a href="#">Why JavaScripte is Awesome</a>
+                <p class="related-author">By Matilda</p>
+              </li>
+            </div>
+
+          </ul>
+        </aside>
+      <!-- </div> flex-box closing tag element-->
+      <footer>
+        <p id="copyright">Coopyright &copy; 2027 by The code Magazine.</p>
+    </footer>
+    </div>
+      
+    </header>
+  </body>
+  
+</html>
+
+<!-- Théorie -->
+
+<!-- Block element//inline element// inline block-element= 3 types de box model -->
+<!-- Bloc model ne s'applique pas sur les inline element 
+  (margin et padding ne peuvent s'ajouter que à droite et à gauche (horizental-space) 
+  pas en bas et vers le haut(vertical-space)) -->
+
+
+  <!-- Positioning -->
+
+  <!-- Position relative -->
+<!-- Normal flow position par défaut de tout les element, ils sont disposés
+  en accord avec leurs ordres du code html
+proprety css = position: relative;  -->
+
+<!-- Position Absolute -->
+<!-- Les elements sont rétirés de leur flow habituel (out of flow) 
+l'element n'a pas plus d'impacte sur les elements qui l'entoure, il peut meme se superposer sur eux
+proprety css= position: absolute;
+Déplacement d'un element absolute -> on utilise les valeurs top,bottom,left,right 
+pour le positioner relativement par rapport à son container parent(le container doit avoir la prorety css position et une valeur de relative)-->
+
+<!-- Pseudo-element -->
+
+<!-- Element qui n'existe pas réelement (ils ne sont pas présent sur mon fichier html)
+mais que nous nous créer et stylisé sur le fichier css 
+la proprety s'écris de la manière suivante ex= h1::first-letter la première lettre de h1 
+sera ciblé et nous pourrons changer sont style avec css-->
+
+<!-- Adjescent element selector // adjescent cibling selector -->
+
+<!-- adjescend c'est le "frére" d'un element qui vient juste après
+exemple ->h3+p::first-line -->
+
+<!-- ::before and ::after pseudo-element -->
+<!-- ::before créer un element qui sera le premiere enfant d'un element selectionner -->
+<!-- Par défaut les pseudo-element sont des inline element donc le box-model ne s'applique pas -->
+<!-- ::after créer un element qui sera le dérnier enfant d'un element selectionner -->
+
+
+<!-- FLOATS -->
+
+<!-- la proprety float fais sortir un element du flow de la page (comme le position:absolute) les élèments
+l'entourant flotte autour-->
+<!-- Les floats sont toujours capable d'appliquer des marges -->
+<!-- Colpasing element : si un element parent se retrouve avec ses enfants avec une proprety
+float -> c'est comme si il avait perdu son contenu. il finit par "s'éfondrer sur lui meme" -->
+<!-- Exemple de colapsing element:
+<header>
+  <h1>The Code magazine</>
+    
+  <nav>                                 si je difinis <h1> <nav> avec une proprety css de float 
+    <a href="#">Blog</a>                 la hauteur de h1 va s'effondrer parce que son contenu
+    <a href="#">Challenges</a>           aura disparu
+    <a href="#">Flexbox</a>
+    <a href="#">Css grid</a>
+  </nav>
+</header>
+
+différence entre float et absolute positioning ->
+        absolute positioning = n'ont pas d'impacte sur les elements qui les entoures
+        les element passe meme par dessus sans tenir compte de la presence d'un element absolute
+
+        float = les text et inline element vont se placer autour en tenant compte de la présence
+        d'un element float
+        le container parent d'un element float ne va pas ajuster sa hauteur à son enfant
+        il va agir comme si aucun contenu n'étant en lui
+
+ //// Différentes techniques pour régler le soucis des colapsing heights des elements parents////
+
+ 1)Placer une div vide comme ceci dans l'élèment parent -> <div class="clear"></div>
+ cibler sur css avec la proprety clear -> .clear{
+                                              clear: both;
+                                            }
+
+  2)Ajout d'une class -> class="clearfix" sur le parent avec la hauteur qui s'éffondre
+  sur css cibler l'element parent et y ajouter un pseudo-element comme ceci :       
+  .clearfix::after {
+    content:'';
+    clear: both;
+    display: block;
+  }    
+  cette méthode nous permet d'éviter d'avoir des <div> vide dans notre code html car 
+    le pseudo-element ::after nous créera un element vide à la fin de l'élèment parent
+  
+  pseudo-elements sont des inline element -> pas oublier de les faire passer en block element
+  -->
+<!-- 
+  attention les element qui suivent un float flottent autour (il suffit de cibler l'élèment qui flottent sur css
+  avec la proprety clear et la valeur both pour régler le soucis)
+ -->
+
+ <!-- Box-model par défault -->
+ <!-- le box model par défaut(content-box) addition les bords+le contenu+ le padding -->
+ <!-- Box-sizing: border-box -->
+ <!-- le box sizing (border-box)proprety avec une valeur de border-box change le comportment de mesure 
+ -> si je spécifie une largeur de 300px le box sizing s'arrange que la largeur soit toujours
+ de 300px avec les bord et le padding compris  -->
+
+ <!-- généralement nous travaillons avec le box-model:border-box pour appliquer cette proprety à tout 
+ nos layout nous utilsons le selector universel 
+ (pas le body car ce n'est pas une proprety qui s'hérite) -->
+
+                  <!-- Flex box -->
+    <!-- proprety css qui nous sers à créer des layout à une dimension (la largeur)
+    de la gauche vers la droite -->
+    <!-- l'idée principal dérière flexbox était de pouvoir diviser de manière
+      équitable l'espace libre d'un element parent pour y placer ses enfants-->
+      <!-- Flexbox nous facilite l'alignement des item dans leurs elements parent
+      que se soit horizentalement ou verticalement -->
+      <!-- Flexbox nous permet de résoudre donc des soucis reccurent tel que 
+      le centrage vertical et pouvoir avoir des colonnes de meme hauteur -->
+
+<!-- 1) Pour lancer flex-box cibler l'élèment parent avec la proprety display: dans css
+   et une valeur de flex -->
+
+<!--  Tout les elements contenu dans l'élèment parent sont appeler flex-item(child-element)
+ -->
+
+ <!-- Horizentalement (width) les flex item prennent que la place dont ils ont besoins
+pas plus -->
+<!-- Verticalement parcontre ils prennent la hauteur de l'élèment flex-item 
+le plus haut  -->
+
+<!-- Une des proprety les plus puissantes de flex-box est la proprety qui permet de 
+- centrer verticalement -> align-item: center; 
+- centrer verticalement en haut du container -> align-item: flex-start
+centrer verticalement en bas du container -> align-item: flex-end;
+
+la Valeur par défaut une fois flex-box activé est toujours stretch
+-> stretch signifiant que les element du container seront aussi haut 
+que l'élèment le plus haut du container-->
+
+<!--  l'élèment sur le quel on applique la proprety display flex
+est le flex container.
+
+Tout les élèment enfant à l'intérieur du flex container sont les flex item-->
+
+<!-- Valeur par défaut des 3 proprety css flex -->
+<!-- 
+  DEFAULTS VALUE
+  flex-grow: 0; partage tout l'espace disponible de l'élèment parent container entre ses enfant (les flex-items)
+  attention si je cible un item en particulier c'est l'itemp cibler qui occupera tout l'espace disponible restant. 
+  flex-shrink: 1; détermine si le container est autouriser à réduire la largeur des item pour qu'il fit 
+  avec leur container
+  flex-basis: auto; -> pour la largeur des flex item (on l'utilise à la place de witdh)
+
+  Attention flex box réduit par défaut la largeur des flex item si la valeur(flex basis) des flex item
+  combiné dépasse la largeur du container. Ce compportement par défault est du au flex-shrink 
+  qui à une valeur par défaut de 1
+
+  Pour laisser les flex-item sortir de leur container on doit fixer la valeur de flex-shrink sur 0
+  (pas toujours conoseiller car mon contenu dépassera son container)
+
+
+
+  ATTENTION!! la proprety flex: 1; s'applique sur les flex item directement!!!
+
+  nom généric ->row
+ -->
+
+                            <!-- CSS GRID THEORIE -->                         
+
+
+<!-- Css grid est une technologie css qui nous permet de créer des layout en 2 dimension
+(horizentalement et verticalement) -->
+<!-- l'idée principal dérière css grid était de pouvoir diviser un container en colonne et en
+rangé qui sont occupé par les grid item( les element enfant du container)  -->
+<!--  L'avantage est de faire moins de "nested-html" et de pouvoir faire du css plus 
+lisible -->
+
+<!--  CSS grid n'est pas la pour remplacer flex-box ont change de technologie en fonction des besoins
+si j'ai besoin d'un layout à une dimensions = flex-box 
+si j'ai besoin d'un layout en 2 dimensions= css grid-->
+
+<!-- grid-template-columns-> proprety css pour décider du nombre de colonne et de la largeur
+                        Manière d'écrire-> 
+      grid-template-columns: 1fr 1fr 1fr; j'aurai 3 colonne de la meme 
+    largeur (fr abréviation pour fraction)
+
+      grid-template-columns: 1fr 1fr auto; j'aurai 2 colonne de la meme largeur
+      la 3ieme colonne auto prendra l'espace restant
+      
+     grid-template-columns: repeat(4, 1fr); j'aurai 4 colonne égal chaqu'une prenant
+     le meme espace horizentalement
+   -->
+
+<!-- 
+   explicite row -> row dans la hauteur a été spécifier 
+   inplicite row -> row dont la hauteur n'a pas été spécifier et qui prendra donc l'espace restant
+
+   Les proprety css suivante sont à utilisé sur les grid item afin d'y modifier l'ordre
+   des grid items
+
+   grid-column: 2/3;
+   grid-row: 1 / 2; 
+  
+  si je souhaite qu'un grid item s'élargis sur plusieurs grid cell
+   -> grid-column: 1 / 3 
+  on peut également écrire de la manière suivante : 
+  -> grid-column: 1 / span 3 (cela signifie partir de la cell 1 à la 3
+  
+  si je souhaite utiliser toute la largeur sans connaitre le nombre de cell
+  petite technique est de faire : grid-column: 1 / -1; )-->
+
+
+  <!--  
+    content =
+    align-tracks inside of the container 
+    justify -> horizentally (row-axis) 
+    align -> vertically (column-axis)
+  -->
+<!--  si je souhaite deplacer une cell individuellement :
+je cible sur css la ceell en question
+et les proprety a appliquer sont :
+          justify-self:
+          align-self: 
+          suivis de ma variable choisis-->
+
+          <!-- les proprety : 
+            align-items
+            justify-items
+
+            align-content
+            justify-content
+
+          sont à utiliser sur le container parent des cell -->
+
+
+
+ <!-- <div class="container">
+  <div class="flex-item-1"></div>
+  <div class="flex-item-2"></div>
+  <div class="flex-item-3"></div>
+  <div class="flex-item-4"></div>
+  <div class="flex-item-5"></div>
+  <div class="flex-item-6"></div>
+ </div> -->

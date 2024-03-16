@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* selecteur universel 
+  applique une régles css à tout les élèments
+  sans héritage*/
+}
+body {
+  position: relative;
+  /* applique une régles css par héritage, certaines régles 
+  ne peuvent donc pas s'appliquer car elle ne s'hérite pas */
+  /* position: absolute; */
+  color: #444;
+  font-family: "Roboto", sans-serif;
+  /* width: 750px; */
+  border-top: solid 10px #1098ad;
+}
+
+.container {
+  width: 1300px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}
+#main-header {
+  padding: 20px 0;
+  background-color: #f7f7f7;
+  width: 100%;
+  /* border-top-style: solid;
+  border-bottom-style: solid;
+  border-color: #1098ad;
+  border-width: 5px; */
+  text-align: center;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+h1::first-letter {
+  font-style: normal;
+  margin-right: 10px;
+}
+.post-header {
+  flex-basis: 850px;
+}
+.blog-image {
+  margin-bottom: 40px;
+}
+
+.navigation {
+  margin: auto;
+
+  list-style: none;
+  padding-left: 0px;
+}
+
+.navigation > li {
+  display: inline;
+}
+.navigation > li > a {
+  text-decoration: none;
+  margin-left: 15px;
+}
+a {
+  margin-right: 10px;
+}
+/* styles link by targeting a state with the pseudo-class */
+/* ATTENTION : l'ordre est important -> Moyen memo-technique ->LVHA */
+a:link,
+a:visited {
+  color: #1098ad;
+}
+a:hover {
+  color: lightblue;
+}
+a:active {
+  color: #1098ad;
+}
+h1 {
+  font-style: italic;
+}
+h1,
+h2,
+h3 {
+  color: #1098ad;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+h2 {
+  margin-bottom: 30px;
+}
+h3 {
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+h4 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+p {
+  line-height: 1.5;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+article > p:last-child {
+  margin-bottom: 0;
+}
+.benefit-list,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+/* li {
+  font-size: 20px;
+  margin-bottom: 10px;
+} */
+li:last-child {
+  margin-bottom: 0;
+}
+
+/* l'auteur du contenu */
+.author {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.author-content {
+  margin-bottom: 0;
+  font-style: italic;
+  font-size: 16px;
+}
+
+aside {
+  background-color: #f7f7f7;
+
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 20px;
+  /* height: fit-content; */
+  flex-basis: 400px;
+
+  /* position: relative; */
+}
+.related-author {
+  font-size: 13px;
+  font-style: italic;
+}
+.like-btn {
+  position: absolute;
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+  bottom: 50px;
+  right: 50px;
+}
+
+/* selecteur de descendance on peut également l'écrire de la manière suivante: 
+footer (espace) p */
+/* footer > p {
+  font-size: 16px;
+} */
+ul {
+  margin-left: 0;
+}
+.related {
+  list-style: none;
+}
+#copyright {
+  font-size: 16px;
+}
+article header p {
+  font-style: italic;
+  font-size: 18px;
+}
+.blog-image {
+  position: relative;
+  /* width: 800px; */
+}
+.top-article {
+  padding: 10px;
+  border: none;
+  font-weight: bold;
+  position: absolute;
+  color: black;
+  background-color: yellow;
+  top: -20px;
+  right: -25px;
+}
+
+/* Pseudo class */
+/* li:first-child {
+  font-weight: bold;
+}
+li:last-child {
+  font-style: italic;
+}
+li:nth-child(2) {
+  color: red;
+}
+li:nth-child(odd) {
+}
+li:nth-child(even) {
+}
+
+article p:nth-child(2) {
+  color: red;
+}
+article p:last-child {
+  color: red;
+} */
+
+/* Misconception: This won't work */
+article p:first-child {
+  color: red;
+}
+.post-image {
+  width: 100%;
+}
+/* p::first-line {
+  color: red;
+} */
+h2 {
+  position: relative;
+}
+h2::after {
+  content: "top";
+  font-size: 16px;
+  padding: 5px 10px;
+  border: none;
+  display: inline-block;
+  font-weight: bold;
+  position: absolute;
+  color: #000;
+  background-color: #ffe70e;
+  top: -15px;
+  right: -25px;
+}
+/* FLOATS */
+
+/* .author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.author-content {
+  /* padding-left: 80px; */
+/* float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+} 
+*/
+/* article {
+  width: 825px;
+  float: left;
+}
+aside {
+  width: 300px;
+  float: right;
+}
+footer {
+  clear: both;
+}
+
+h2 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+} */
+
+/* FLEXBOX LAYOUT */
+/* .container-flex {
+  display: flex;
+  gap: 75px;
+  margin-bottom: 60px;
+} */
+.related-content {
+  display: flex;
+  margin-bottom: 25px;
+  gap: 15px;
+  align-items: center;
+}
+.related-author {
+  margin-bottom: 0;
+}
+.related-content img {
+}
+
+.related-content:last-child {
+  margin-bottom: 0;
+}
+ul {
+  margin-bottom: 0;
+}
+.related a:link {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* CSS GRID LAYOUT */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+}
+#main-header {
+  grid-column: 1 / span 2;
+}
+
+article {
+}
+aside {
+}
+footer {
+  grid-column: 1 / -1;
+  background-color: #f7f7f7;
+}
